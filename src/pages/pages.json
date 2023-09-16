@@ -1,5 +1,0 @@
-{
-	"layout": "../_includes/page.liquid",
-	"permalink": "/blog/{{title | slug}}/",
-	"tags": "pages"
-}

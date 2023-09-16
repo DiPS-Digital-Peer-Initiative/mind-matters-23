@@ -1,3 +1,3 @@
-# PE Miniblog
+# Mind Matters 23
 
-Small, lightweight, static-generated mini-blogging platform.
+Website for the Mind Matters 2023 event.
