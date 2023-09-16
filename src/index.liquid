@@ -18,6 +18,26 @@ no-padding
                <div class="hero-copy">
                     Every year October is observed as the month to generate awareness on Mental Health and Wellbeing. The theme for 2023 set by the World Foundation of Mental Health is “ Mental Health is a universal human right”. To commemorate the same the Young Peer Educators of Delhi Public School Bangalore South in collaboration with Expressions India is hosting the Mind Matters Conclave 2023 on 6th and 7th October, 2023.<br>
                     <b>Register for the event <a href="https://g.co/kgs/igqHTs" class="bright" target="_blank" rel="noopener noreferrer">here</a>.</b>
+                    <div id="ar-exp">Use Safari on iPhone or iPad to view an AR Experience</div>
+                    <script>
+                         function iOS() {
+                              return [
+                              'iPad Simulator',
+                              'iPhone Simulator',
+                              'iPod Simulator',
+                              'iPad',
+                              'iPhone',
+                              'iPod'
+                              ].includes(navigator.platform)
+                              // iPad on iOS 13 detection
+                              || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+                         }
+
+                         if (iOS()) {
+                              var d=document.getElementById("ar-exp");
+                              d.innerHTML = '<a rel="ar" href="/_media/ar/ar-exp.usdz"><img>View in AR ></a>';
+                         }
+                    </script>
                </div> 
           </div>
      </div>
@@ -27,7 +47,7 @@ no-padding
      <h1>Events</h1>
      {% for event in collections.event %}
           <a class="event-banner" href="{{event.url}}">
-               {{ event.data.title }}
+               <h1 class="event-heading">{{ event.data.title }}</h1>
           </a>
      {% endfor %}
 </div>
