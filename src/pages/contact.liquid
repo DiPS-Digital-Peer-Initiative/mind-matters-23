@@ -1,0 +1,27 @@
+---
+layout: main-layout
+---
+
+<div class="content widthlimited">
+
+     <div class="page-heading">
+     <h1>Contact Us</h1>
+     </div>
+
+     You can contact the following people between 3 to 6 p.m.
+
+     {% for contact in collections.contact %}
+          <h2>{{contact.data.name}}</h2>
+          Ph.: <a href="tel:{{contact.data.phone}}">{{contact.data.phone}}</a>
+     {% endfor %}
+
+
+     <h2>Address</h2>
+     DPS Bangalore South,<br>
+     11th KM, Bikaspura Main Road,<br>
+     Kanakapura Road, Konanakunte,<br>
+     Bangalore,<br>
+     Karnataka 560062<br>
+
+
+</div>

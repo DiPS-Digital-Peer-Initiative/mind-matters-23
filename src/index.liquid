@@ -12,14 +12,30 @@ no-padding
      <div class="hero-background" id="particles-js"></div>
      <div class="hero-foreground">
           <div class="hero-content">
+
+
+               <div class="hero-logos">
+                    <img src="/_media/images/EI.png" alt="Expressions India logo">
+
+                    <img src="/_media/images/DPS.png" alt="DPS logo">
+
+                    <img src="/_media/images/MHD.png" alt="World Mental Health Day logo">
+
+                    <img src="/_media/images/PE.png" alt="DPS PE logo">
+               </div>
                <div class="main-heading">
-                    Mind Matters '23
+                    Mind Matters 2023
                </div> 
+               <div class="hero-subtitle">Young Adolescent Peer Leadership Conclave</div>
+
                <div class="hero-copy">
-                    <b><a href="/_media/brochure.pdf" class="bright" target="_blank" rel="noopener noreferrer">See the brochure ></a></b><br>
                     Every year October is observed as the month to generate awareness on Mental Health and Wellbeing. The theme for 2023 set by the World Foundation of Mental Health is "Mental Health is a universal human right." To commemorate the same the Young Peer Educators of Delhi Public School Bangalore South in collaboration with Expressions India is hosting the Mind Matters Conclave 2023 on 6th and 7th October, 2023.<br>
-                    <b>Register for the event <a href="https://entrar.in/cd273632523539f0110095199b821c3c/o nlineRegistrationConclave/3" class="bright" target="_blank" rel="noopener noreferrer">here</a>.</b><br>
-                    <div id="ar-exp">Use Safari on iPhone or iPad to view an AR Experience</div>
+                    <div id="ar-exp"><div class="ar-notavaliable">Open this page using Safari on your iPhone or iPad to see an AR experience</div></div>
+                    <div class="learn-more">
+                         <a href="/_media/brochure.pdf" class="bright" target="_blank" rel="noopener noreferrer">See the brochure</a>
+                         or
+                         <a href="https://entrar.in/cd273632523539f0110095199b821c3c/onlineRegistrationConclave/3" class="bright" target="_blank" rel="noopener noreferrer">Register</a>
+                    </div>
                     <script>
                          function iOS() {
                               return [
@@ -46,11 +62,16 @@ no-padding
 
 <div class="events">
      <h1>Events</h1>
-     {% for event in collections.event %}
-          <a class="event-banner" href="{{event.url}}">
-               <h1 class="event-heading">{{ event.data.title }}</h1>
-          </a>
-     {% endfor %}
+     <div class="events-container">
+          {% for event in collections.event %}
+               <a class="event-banner" href="{{event.url}}">
+                    <div class="banner-content">
+                         <h1 class="event-heading">{{ event.data.title }}</h1>
+                         <h2>{{ event.data.dates }} at {{ event.data.times }}, {{ event.data.venue }}</h2>
+                    </div>
+               </a>
+          {% endfor %}
+     </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>

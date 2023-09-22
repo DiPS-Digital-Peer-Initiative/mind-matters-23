@@ -2,7 +2,13 @@
 layout: main-layout
 ---
 
-<h1>{{ title }} </h1>
+<div class="centered-heading">
+     <img src="/_media/images/{{title | slug}}.jpeg" alt="Logo">
+
+     <h1>{{ title }} </h1>
+
+     <h2>{{ dates }} at {{ times }}, {{ venue }}</h2>
+</div>
 
 {{ description | markdownify  }}
 

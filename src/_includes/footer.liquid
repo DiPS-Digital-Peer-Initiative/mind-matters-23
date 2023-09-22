@@ -3,13 +3,10 @@
      <div class="footer-flex-content">
           <div>
                <a href="/" >
-               <div class="footer-heading">Mind Matters '23</div>
+               <div class="footer-heading">Mind Matters 2023</div>
                </a>
-               
-               <br>
-
-               <div class="links-section">
-
+          </div>
+          <div class="links-section">
                <!-- C-1 -->
                <div class="links-group">
                     <div class="links">
@@ -23,68 +20,35 @@
                     </div>
                </div>
 
-          </div>
-               
+               <div class="links-group">
+                    <div class="links">
+                         <div class="links">
+                              <div class="title">Events</div>
+                              <ul>
+                                   {% for event in collections.event %}
+                                        <li><a href="{{event.url}}">{{event.data.title}}</a></li>
+                                   {% endfor %}
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="links-group">
+                    <div class="links">
+                         <div class="links">
+                              <div class="title">Links</div>
+                              <ul>
+                                   <li><a href="/pages/principals-message">Principals's Message</a></li>
+                                   <li><a href="/pages/contact">Contact us</a></li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
           </div>
      </div>
 
      <div class="endnotes">
-          <div id="countdowntext">0 days 0 hours 0 minutes and 0 seconds left</div>
+          Made by Sumukh Prasad
      </div>
 
 </footer>
-
-<script>
-  const day = 1000 * 60 * 60 * 24
-  const hour = 1000 * 60 * 60
-  const minute = 1000 * 60
-  const second = 1000
-  const finalDate = new Date("October 6, 2023 08:00:00")
-
-  function calculateCountdown() {
-    const date = new Date()
-      let difference = Math.abs(finalDate - date)
-
-        let dL,
-          hL,
-          mL,
-          sL
-
-        dL = Math.floor(difference / day)
-        difference -= dL * day
-
-        hL = Math.floor(difference / hour)
-        difference -= hL * hour
-
-        mL = Math.floor(difference / minute)
-        difference -= mL * minute
-
-        sL = Math.floor(difference / second)
-        difference -= sL * second
-
-        const spanWrap = (val, id) => `<span id="c-${id}" class="c-val">${val}</span>`
-      const pluralize = (str, val) => (
-        val == 1
-          ? str
-          : str + "s"
-      )
-    const stringify = (val, root, id) => `${
-      spanWrap(val, id)
-    } ${
-      pluralize(root, val)
-    }`
-
-    let text = `${
-      stringify(dL, "day", "d")
-    } ${
-      stringify(hL, "hour", "h")
-    } ${
-      stringify(mL, "minute", "m")
-    } and ${
-      stringify(sL, "second", "s")
-    } left`
-
-    document.getElementById("countdowntext").innerHTML = text
-  }
-  setInterval(calculateCountdown, 1000)
-</script>

@@ -12,7 +12,6 @@
           overflow: hidden
           /*background-image: url(/_media/hero/bg.jpg)*/
           background-color: #eee
-          border: 1px solid #888
           color: #888
           background-size: cover
           background-position: center
@@ -25,10 +24,30 @@
 
           .hero-content
                padding: 10px
+               border: 1px solid $theme-light
+               border-radius: 16px
+               background-color: $green4
+               text-align: center
                @include center(y)
+               .hero-subtitle
+                    text-transform: uppercase
+                    font-family: 'Lato'
+                    letter-spacing: 5px
+                    font-weight: 300
+                    color: $theme-light
+                    font-size: 20px
+               .hero-logos
+                    display: flex
+                    align-items: center
+                    flex-direction: row
+                    justify-content: space-between
+                    margin-top: 25px
+                    margin-bottom: 25px
+                    img
+                         width: 15%
                .hero-copy
                     color: white
-                    font-family: 'Inter'
+                    font-family: 'Lato'
                     margin-top: 25px
                     font-size: 18px
                     opacity: 0.8
@@ -36,7 +55,23 @@
                          color: #888
                          font-size: 50px
                          font-weight: bold
-
+               .learn-more
+                    background-color: $theme-light
+                    font-family: 'IBM Plex Mono'
+                    padding: 20px
+                    border-radius: 50px
+                    color: $theme-dark
+                    margin-right: auto
+                    margin-left: auto
+                    width: fit-content
+                    margin-top: 25px
+                    font-weight: 200
+                    a
+                         color: $theme-dark
+                         font-weight: bold
+                         text-decoration: none
+               .ar-notavaliable
+                    font-weight: 200
                .main-heading
                     margin: 0
                     color: $theme_light
@@ -54,7 +89,7 @@
           height: 100vh
           .hero-foreground
                .hero-content
-                    padding: 0px
+                    padding: 25px
                     @include center()
                     .hero-copy
                          margin-top: 25px
