@@ -65,6 +65,7 @@ no-padding
      <div class="events-container">
           {% for event in collections.event %}
                <a class="event-banner" href="{{event.url}}">
+                    <div class="banner-background" style="background-image: url(/_media/images/{{event.data.title | slug}}.jpeg)"></div>
                     <div class="banner-content">
                          <h1 class="event-heading">{{ event.data.title }}</h1>
                          <h2>{{ event.data.dates }} at {{ event.data.times }}, {{ event.data.venue }}</h2>
