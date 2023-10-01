@@ -1,7 +1,7 @@
 ---
 title: Just A Minute
 dates: 7th October
-times: 12:30 p.m. to 2:00 p.m.
+times: 12:00 p.m. to 1:30 p.m.
 venue: BIA Classroom
 description: >-
    Just A Minute speeches.

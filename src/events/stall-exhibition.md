@@ -1,7 +1,7 @@
 ---
 title: Stall Exhibition
 dates: 6th/7th October
-times: 12:00 p.m. to 5:00 p.m.
+times: 11:30 p.m. to 5:00 p.m.
 venue: Open Auditorium
 description: >-
    **Topics**

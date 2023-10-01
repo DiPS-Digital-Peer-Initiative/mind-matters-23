@@ -1,7 +1,7 @@
 ---
 title: Nukkad Natak
 dates: 7th October
-times: 9:00 a.m. to 1:00 p.m.
+times: 10:00 a.m. to 11:30 p.m.
 venue: Amphitheatre
 description: >-
    "Theatre is a Powerful Art Form, it teaches lessons about life, society and emotion and more importantly about yourself" -Anastasia Roberts

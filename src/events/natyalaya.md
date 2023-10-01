@@ -1,7 +1,7 @@
 ---
 title: Natyalaya
 dates: 6th October
-times: 11:00 a.m. to 1:00 p.m.
+times: 11:15 a.m. to 1:00 p.m.
 venue: BIA Auditorium
 description: >-
    **Topics**

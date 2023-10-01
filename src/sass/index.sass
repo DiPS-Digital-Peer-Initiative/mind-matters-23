@@ -12,6 +12,17 @@
           text-decoration: underline
           text-align: center 
 
+     .events-description
+          text-align: center
+          font-family: 'Lato'
+          font-size: 20px
+          color: $theme-dark
+          a
+               font-weight: bold
+               text-decoration: none
+               &::after
+                    content: "›"
+
      .events-container
           display: grid
           grid-template-columns: calc(50vw - 36px) calc(50vw - 36px)

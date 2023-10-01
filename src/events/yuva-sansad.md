@@ -1,8 +1,8 @@
 ---
 title: Yuva Sansad
 dates: 6th October
-times: 11:00 a.m. to 1:00 p.m.
-venue: Open Auditorium
+times: 11:00 a.m. to 1:15 p.m.
+venue: 4th floor, Athena
 description: >-
    "Youth Parliament" is a program where each group will be assigned a topic on mental health for further deliberation and discussion.
 

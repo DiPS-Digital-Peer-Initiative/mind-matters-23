@@ -8,12 +8,20 @@ layout: main-layout
      <h1>{{ title }} </h1>
 
      <h2>{{ dates }} at {{ times }}, {{ venue }}</h2>
+
+     <h2><a href="/_media/brochures/{{title |slug}}.pdf" target="_blank" rel="noopener noreferrer">Get the brochure</a></h2>
 </div>
 
-{{ description | markdownify  }}
+{% if deschtmlenabled %}
+     {{ description }}
+{% else %}
+     {{ description | markdownify }}
+{% endif %}
 
-<h2>Rules and Regulations</h2>
-{{ rules | markdownify  }}
+{% if rules != "none" %}
+     <h2>Rules and Regulations</h2>
+     {{ rules | markdownify }}
+{% endif %}
 
 <h2>Dates, times, and venues</h2>
 <b>Date & time: </b>{{ dates }} {{ times }}<br>
