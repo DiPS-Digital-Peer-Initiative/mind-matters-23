@@ -24,12 +24,14 @@ description: >-
 
 
   <h2>Day 2 Events</h2>
+
+  <ul style="list-style-type: none">
+
   <li style="margin-top: 15px"><b> Life Skills Workshop and Introduction to the Peer Educators Program by  Ms. Geeta Mehrotra, Asst. Director, Expressions India - National School Mental Health Program</b><br>
   <b>Date:</b> 7th October, 2023 <br>
   <b>Time:</b>  8:45am-10:00 am<br>
   <b>Venue:</b> Open Auditorium</li>
-
-  <ul style="list-style-type: none">
+  
   <li style="margin-top: 15px"><b>Workshop by Dr. Ashwini from Muktha Foundation on "Supporting children in distress: Skills for parents, teachers and therapists"</b><br>
   <b>Date:</b> 7th October, 2023 <br>
   <b>Time:</b> 10:00am-11:00 am<br>
